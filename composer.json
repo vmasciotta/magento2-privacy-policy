@@ -14,15 +14,7 @@
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Vmasciotta\\Privacy\\": ""
+      "Vmasciotta\\PrivacyPolicy\\": ""
     }
-  },
-  "extra": {
-    "map": [
-      [
-        "*",
-        "Vmasciotta/PrivacyPolicy"
-      ]
-    ]
   }
 }
