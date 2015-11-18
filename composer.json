@@ -16,5 +16,13 @@
     "psr-4": {
       "Vmasciotta\\PrivacyPolicy\\": ""
     }
+  },
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Vmasciotta/PrivacyPolicy"
+      ]
+    ]
   }
 }
