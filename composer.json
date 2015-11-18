@@ -1,5 +1,5 @@
 {
-  "name": "Vmasciotta/Magento2 Privacy Policy",
+  "name": "vmasciotta/magento2-privacy-policy",
   "description": "This module adds checkboxes for EU privacy policy law",
   "require": {
     "php": "~5.5.0|~5.6.0|~7.0.0",
