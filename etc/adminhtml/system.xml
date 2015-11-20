@@ -20,10 +20,9 @@
                     <label>CMS page to link</label>
                     <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
                 </field>
-                <field id="static_block_id" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                <!--<field id="static_block_id" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Static Block ID</label>
-                </field>
-
+                </field>-->
             </group>
         </section>
     </system>
