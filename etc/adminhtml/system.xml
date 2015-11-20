@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="privacy_policy" translate="label" type="text" sortOrder="99" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Privacy Policy</label>
+            <tab>customer</tab>
+            <resource>Vmasciotta_PrivacyPolicy::privacypolicy</resource>
+            <group id="module_settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Settings</label>
+                <!--<field id="module_enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>-->
+                <field id="display_mode" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display mode</label>
+                    <source_model>Vmasciotta\PrivacyPolicy\Model\Config\Source\DisplayMode</source_model>
+                </field>
+                <field id="cms_page" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CMS page to link</label>
+                    <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+                </field>
+                <field id="static_block_id" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Static Block ID</label>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

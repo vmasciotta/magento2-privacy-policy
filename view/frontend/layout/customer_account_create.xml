@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
-      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <referenceBlock name="customer_form_register" template="Vmasciotta_PrivacyPolicy::form/privacy-form-register.phtml" />
+            <referenceBlock name="customer_form_register" template="Vmasciotta_PrivacyPolicy::form/privacy-form-register.phtml">
+                <block class="Vmasciotta\PrivacyPolicy\Block\PrivacyPolicy" name="privacy" template="Vmasciotta_PrivacyPolicy::form/privacy-block.phtml" />
+            </referenceBlock>
         </referenceContainer>
     </body>
 </page>

@@ -12,6 +12,7 @@
  * Create account form template
  *
  * @var $block \Magento\Customer\Block\Form\Register
+ * @var $this \Magento\Framework\View\TemplateEngine\Php
  */
 ?>
 <?php echo $block->getChildHtml('form_fields_before')?>
@@ -150,13 +151,13 @@
             </div>
         </div>
         <?php echo $block->getChildHtml('form_additional_info'); ?>
+        <div class="field privacy">
+            <?php echo $block->getChildHtml('privacy'); ?>
+        </div>
     </fieldset>
     <div class="actions-toolbar">
         <div class="primary">
             <button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Create an Account') ?>"><span><?php /* @escapeNotVerified */ echo __('Create an Account') ?></span></button>
-        </div>
-        <div class="privacy-box" style="display: block;">
-            <label for="privacy"><?php echo __('Privacy') ?> </label><input type="checkbox" name="privacy" data-validate="{required:true}" value="Privacy" />
         </div>
         <div class="secondary">
             <a class="action back" href="<?php echo $block->escapeUrl($block->getBackUrl()) ?>"><span><?php /* @escapeNotVerified */ echo __('Back') ?></span></a>
