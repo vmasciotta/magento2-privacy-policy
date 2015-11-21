@@ -12,12 +12,12 @@
                     <label>Enable Module</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>-->
-                <field id="display_mode" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <!--<field id="display_mode" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Display mode</label>
                     <source_model>Vmasciotta\PrivacyPolicy\Model\Config\Source\DisplayMode</source_model>
-                </field>
+                </field>-->
                 <field id="cms_page" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>CMS page to link</label>
+                    <label>CMS Privacy Page</label>
                     <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
                 </field>
                 <!--<field id="static_block_id" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
